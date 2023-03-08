@@ -52,6 +52,6 @@ class ExampleTest extends TestCase
 
         $result = $calculator->divide(10, 2);
 
-        $this->assertEquals(7, $result);
+        $this->assertEquals(5, $result);
     }
 }
