@@ -2,10 +2,17 @@
 
 namespace App;
 
+use Exception;
+
 class Calculator
 {
+    
     public function add($num1, $num2)
     {
+        if(is_string($num1)){
+            throw new Exception("Provide valid int");
+        }
+        
         return $num1 + $num2;
     }
 
@@ -27,5 +34,5 @@ class Calculator
 
         return $num1 / $num2;
     }
-    
+
 }
